@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cuM+hf6G8pvQdp0tNmiIvK+0746jvOGZf7FGlUSl8khTZ281Se23e9ZjbXTzQuuFfga2tPcrnGYJXv2vpA4cxQ==",
+  "success": true,
+  "projectFilePath": "D:\\visual studio source code\\assignment\\assignment1\\assignment1\\assignment1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\socgend18\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
