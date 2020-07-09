@@ -10,13 +10,11 @@ namespace assignment1.Models
 
     public class Product
     {
-        [Required(ErrorMessage = "Product ID is required")]
-       
+        [Required(ErrorMessage = "Product ID is required")]       
         public int pid { get; set; }
-        [Required(ErrorMessage = "Product Name is required")]
-        
+        [Required(ErrorMessage = "Product Name is required")]        
         public string pname { get; set; }
-        [Required(ErrorMessage = "Product Price is required")]   
+        [Required(ErrorMessage = "Product Price is required")] 
         public double price { get; set; }
         [Required(ErrorMessage = "Product Stock is required")]
         public int stock { get; set; }

@@ -3,48 +3,54 @@
 *@
 @{
 }
+@model assignment1.Models.Product
 
-<div class="container">
-   @using(Html.BeginForm("Validate", "Product","POST"))
-   {
+    <div class="container">
+        @using (Html.BeginForm("Validate", "Product", "POST"))
+        {
     <table class="table table-bordered">
         <tr>
-          <td>
-             Product Id:
-          </td>
             <td>
-                @Html.TextBox("pid","",new { type="number" })
-            </td>
-           </tr>
-           <tr>
-            <td>
-               Product Name:
+                Product Id:
             </td>
             <td>
-                @Html.TextBox("pname")
+                @Html.TextBoxFor(m => m.pid)
             </td>
-            </tr>
+            <td>@Html.ValidationMessageFor(m => m.pid)</td>
+        </tr>
         <tr>
-        <td>
-            Product Price:
-        </td>
-        <td>
-            @Html.TextBox("price")
-        </td>
-          </tr>
+            <td>
+                Product Name:
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.pname)
+            </td>
+            <td>@Html.ValidationMessageFor(m => m.pname)</td>
+        </tr>
+        <tr>
+            <td>
+                Product Price:
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.price)
+            </td>
+            <td>@Html.ValidationMessageFor(m => m.price)</td>
+        </tr>
         <tr>
             <td>
                 Product Stock:
             </td>
             <td>
-                @Html.TextBox("stock","",new { type="number"})
+                @Html.TextBoxFor(m => m.stock)
+
             </td>
+            <td>@Html.ValidationMessageFor(m => m.stock)</td>
         </tr>
         <tr>
             <td colspan="2">
                 <center><input type="submit" value="Submit" /></center>
             </td>
         </tr>
-    </table>
-   }
-</div>
+    </table>}
+        <center>@Html.ActionLink("Product List", "Index")</center>
+    </div>

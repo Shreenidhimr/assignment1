@@ -30,6 +30,7 @@ namespace assignment1.Controllers
             return RedirectToAction("Index");
 
         }
+        [HttpPost]
         public IActionResult Validate(Product prod)
         {
             if (ModelState.IsValid)
@@ -38,7 +39,7 @@ namespace assignment1.Controllers
                 return RedirectToAction("Index");
             }
             else
-                return RedirectToAction("Create");
+                return View("Create");
         }
     }
 }
